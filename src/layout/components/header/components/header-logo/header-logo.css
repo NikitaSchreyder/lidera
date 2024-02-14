@@ -1,0 +1,25 @@
+.header-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo_image {
+  height: 26px;
+}
+
+@media only screen and (max-width: 575px) {
+  .header-logo {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .header-logo_image {
+    height: 24px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .header-logo_image {
+    height: 18px;
+  }
+}

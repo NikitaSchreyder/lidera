@@ -1,0 +1,56 @@
+@import '../layout/components/header/styles.css';
+@import '../layout/components/footer/styles.css';
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout-content {
+  flex: 1 0 auto;
+  margin: auto;
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .layout-content {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+  .layout-content {
+    max-width: 1180px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .layout-content {
+    max-width: 970px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .layout-content {
+    max-width: 750px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .layout-content {
+    max-width: 540px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .layout_container {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+  }
+}

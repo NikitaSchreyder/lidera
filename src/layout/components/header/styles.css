@@ -1,0 +1,90 @@
+@import './components/header-logo/header-logo.css';
+@import './components/header-actions/header-actions.css';
+@import './components/header-menu/header-menu.css';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.header-colored-line {
+  height: 16px;
+  width: 100%;
+  background: #FFFFEF;
+  width: 1424px;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1360px;
+  padding: 0 32px;
+}
+
+@media screen and (max-width: 1460px) {
+  .header-colored-line {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .header-content {
+    width: 1240px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+  .header {
+    margin-bottom: 32px;
+  }
+
+  .header-content {
+    width: 1140px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    gap: 26px;
+    margin-bottom: 26px;
+  }
+
+  .header-content {
+    width: 930px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header {
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+  .header-content {
+    width: 710px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .header {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .header-content {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .header-content {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}
